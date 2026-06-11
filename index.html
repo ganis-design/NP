@@ -1,483 +1,220 @@
+You're right, my bad. Here — copy this directly from chat and paste into the GitHub editor:
+
+**Copy everything below and paste into the GitHub `index.html` editor:**
+
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nirwana Purnabakti</title>
+  <title>Nirwana Purnabakti – Tetap Bermakna, Terus Berkarya</title>
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="container nav-inner">
-      <a href="#" class="logo">Logo</a>
-      <ul class="nav-links">
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">NP Center</a></li>
-        <li><a href="#">Utilitas</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Kontak</a></li>
-      </ul>
-      <a href="#" class="btn btn-primary btn-sm">Daftar Sekarang</a>
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="Nirwana Purnabakti" />
+      </a>
+      <nav class="nav-links">
+        <a href="#">Beranda</a>
+        <a href="#program">Program</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#komunitas">Komunitas</a>
+        <a href="#blog">Berita</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Nirwana Purnabakti</p>
-      <h1 class="hero-title">Tetap Bermakna,<br />Terus Berkarya</h1>
-      <p class="hero-subtitle">
-        Komunitas purnabakti yang menghubungkan komunitas, kegiatan,<br />
-        dan kesehatan agar setiap senior tetap bahagia &amp; berdaya.
-      </p>
-      <div class="hero-actions">
-        <a href="#" class="btn btn-orange">Daftar Menjadi Purnabakti</a>
-        <a href="#" class="btn btn-outline-white">Lihat Cara Kerja</a>
+    <div class="container hero-content">
+      <p class="eyebrow">Selamat Datang di Nirwana Purnabakti</p>
+      <h1>Tetap Bermakna,<br />Terus Berkarya</h1>
+      <p class="hero-sub">Komunitas purnabakti yang aktif, bermakna, dan penuh kehangatan — tempat di mana setiap hari adalah kesempatan untuk tumbuh dan berbagi.</p>
+      <a href="#program" class="btn btn-primary">Jelajahi Program</a>
+    </div>
+  </section>
+
+  <section class="safe-home" id="fasilitas">
+    <div class="container two-col">
+      <div class="text-col">
+        <p class="section-label">Hunian Kami</p>
+        <h2>Rumah yang aman untuk tetap hidup aktif &amp; bermakna</h2>
+        <p>Nirwana Purnabakti hadir sebagai ekosistem hunian yang dirancang khusus untuk para purnabakti — sebuah komunitas hidup yang hangat, aman, dan penuh vitalitas.</p>
+        <ul class="feature-list">
+          <li><span class="feature-icon">✓</span><div><strong>Aman</strong><p>Lingkungan terjaga dengan sistem keamanan 24 jam dan akses terkontrol.</p></div></li>
+          <li><span class="feature-icon">✓</span><div><strong>Aktif</strong><p>Beragam kegiatan fisik, sosial, dan intelektual setiap hari.</p></div></li>
+          <li><span class="feature-icon">✓</span><div><strong>Bermakna</strong><p>Program pemberdayaan yang mendorong kontribusi nyata di masyarakat.</p></div></li>
+        </ul>
+        <a href="#kontak" class="btn btn-primary">Pelajari Selengkapnya</a>
+      </div>
+      <div class="image-col">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=80" alt="Senior community" class="rounded-img" />
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section about-section">
-    <div class="container about-grid">
-      <div class="about-text">
-        <p class="section-label">Nirwana Purnabakti</p>
-        <h2 class="section-title">Rumah yang aman untuk tetap hidup aktif &amp; bermakna</h2>
-        <p class="body-text">
-          Nirwana Purnabakti adalah ruang komunitas yang dirancang khusus untuk para senior yang ingin
-          tetap aktif, terhubung, dan berdaya setelah masa purnatugas. Kami hadir untuk memastikan
-          setiap hari terasa bermakna dan penuh semangat.
-        </p>
-        <div class="about-cols">
-          <div class="about-col">
-            <p class="about-col-label">Visi</p>
-            <p class="body-text-sm">Menjadi ekosistem terpercaya bagi para purnabakti untuk hidup aktif, bermakna, dan sejahtera.</p>
-          </div>
-          <div class="about-col">
-            <p class="about-col-label">Misi</p>
-            <p class="body-text-sm">Menghubungkan komunitas senior dengan layanan kesehatan, kegiatan bermakna, dan hunian yang layak.</p>
-          </div>
-        </div>
-      </div>
-      <div class="about-image">
-        <div class="img-placeholder img-placeholder--tall">
-          <span class="img-icon">&#128247;</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMUNITY / ACTIVITIES -->
-  <section class="section section--gray community-section">
+  <section class="community" id="komunitas">
     <div class="container">
+      <p class="section-label">Kegiatan &amp; Program</p>
       <div class="community-header">
-        <div>
-          <p class="section-label">NP Center</p>
-          <h2 class="section-title">Temukan Komunitas, Kegiatan,<br />dan Pengalaman yang Bermakna</h2>
-        </div>
-        <p class="community-desc body-text">
-          Ikuti berbagai program yang kami sediakan—mulai dari kelas kesehatan,
-          workshop kreatif, hingga kegiatan sosial yang mempertemukan Anda dengan
-          sesama senior yang aktif dan bersemangat.
-        </p>
+        <h2>Temukan Komunitas, Kegiatan, dan Pengalaman yang Bermakna</h2>
+        <a href="#program" class="btn btn-outline">Lihat Semua Program</a>
       </div>
-
-      <div class="cards-track-wrapper">
-        <div class="cards-track" id="activityTrack">
-          <!-- Card 1 -->
-          <div class="activity-card">
-            <div class="img-placeholder img-placeholder--card">
-              <span class="img-icon">&#128247;</span>
-            </div>
-            <div class="card-body">
-              <span class="badge badge--green">Gratis</span>
-              <h4 class="card-title">Senam Sehat Senior</h4>
-              <ul class="card-meta">
-                <li>&#128197; Setiap Selasa &amp; Kamis</li>
-                <li>&#128336; 07.00 – 08.30 WIB</li>
-                <li>&#128205; Aula NP Center Lt. 1</li>
-                <li>&#128101; Terbuka untuk semua anggota</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary btn-sm-full">Daftar Kegiatan</a>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="activity-card">
-            <div class="img-placeholder img-placeholder--card">
-              <span class="img-icon">&#128247;</span>
-            </div>
-            <div class="card-body">
-              <span class="badge badge--blue">Npp350.000</span>
-              <h4 class="card-title">Workshop Literasi Digital</h4>
-              <ul class="card-meta">
-                <li>&#128197; 15 – 17 Juli 2025</li>
-                <li>&#128336; 09.00 – 12.00 WIB</li>
-                <li>&#128205; Ruang Pelatihan Lt. 2</li>
-                <li>&#128101; Maks. 20 peserta</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary btn-sm-full">Lihat Program</a>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="activity-card">
-            <div class="img-placeholder img-placeholder--card">
-              <span class="img-icon">&#128247;</span>
-            </div>
-            <div class="card-body">
-              <span class="badge badge--orange">Npp300.000</span>
-              <h4 class="card-title">Kelas Melukis Ekspresif</h4>
-              <ul class="card-meta">
-                <li>&#128197; Setiap Sabtu</li>
-                <li>&#128336; 10.00 – 12.00 WIB</li>
-                <li>&#128205; Studio Seni Lt. 1</li>
-                <li>&#128101; Semua level</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary btn-sm-full">Lihat Program</a>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="activity-card">
-            <div class="img-placeholder img-placeholder--card">
-              <span class="img-icon">&#128247;</span>
-            </div>
-            <div class="card-body">
-              <span class="badge badge--green">Gratis</span>
-              <h4 class="card-title">Forum Diskusi Mingguan</h4>
-              <ul class="card-meta">
-                <li>&#128197; Setiap Jumat</li>
-                <li>&#128336; 15.00 – 17.00 WIB</li>
-                <li>&#128205; Ruang Komunitas</li>
-                <li>&#128101; Terbuka untuk semua</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary btn-sm-full">Daftar Kegiatan</a>
-            </div>
-          </div>
-          <!-- Card 5 -->
-          <div class="activity-card">
-            <div class="img-placeholder img-placeholder--card">
-              <span class="img-icon">&#128247;</span>
-            </div>
-            <div class="card-body">
-              <span class="badge badge--blue">Npp250.000</span>
-              <h4 class="card-title">Yoga &amp; Meditasi</h4>
-              <ul class="card-meta">
-                <li>&#128197; Senin, Rabu, Jumat</li>
-                <li>&#128336; 06.30 – 08.00 WIB</li>
-                <li>&#128205; Taman NP Center</li>
-                <li>&#128101; Maks. 15 peserta</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary btn-sm-full">Lihat Program</a>
-            </div>
-          </div>
+      <div class="cards-wrapper">
+        <div class="cards-track">
+          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&q=80" alt="Senam Pagi" /><span class="card-tag">Gratis</span></div><div class="card-body"><p class="card-category">Kesehatan</p><h3>Senam Pagi Bersama</h3><p>Mulai hari dengan gerakan sehat bersama komunitas setiap pagi.</p><a href="#" class="card-link">Daftar Sekarang →</a></div></article>
+          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500&q=80" alt="Workshop Digital" /><span class="card-tag">Rp 0</span></div><div class="card-body"><p class="card-category">Teknologi</p><h3>Workshop Literasi Digital</h3><p>Belajar teknologi terkini dari mentor berpengalaman.</p><a href="#" class="card-link">Daftar Sekarang →</a></div></article>
+          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80" alt="Komunitas Seni" /><span class="card-tag">Rp 50–100 rb</span></div><div class="card-body"><p class="card-category">Seni &amp; Budaya</p><h3>Diskusi Komunitas Seni</h3><p>Ekspresikan diri dan temukan komunitas dengan minat serupa.</p><a href="#" class="card-link">Daftar Sekarang →</a></div></article>
+          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80" alt="Memasak" /><span class="card-tag">Gratis</span></div><div class="card-body"><p class="card-category">Kuliner</p><h3>Kelas Memasak Sehat</h3><p>Resep bergizi dan lezat untuk gaya hidup sehat aktif.</p><a href="#" class="card-link">Daftar Sekarang →</a></div></article>
+          <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Yoga" /><span class="card-tag">Gratis</span></div><div class="card-body"><p class="card-category">Kesehatan</p><h3>Yoga &amp; Meditasi</h3><p>Keseimbangan jiwa dan raga untuk ketenangan sehari-hari.</p><a href="#" class="card-link">Daftar Sekarang →</a></div></article>
         </div>
-        <div class="carousel-nav">
-          <button class="carousel-btn" onclick="scrollTrack('activityTrack', -1)">&#8249;</button>
-          <button class="carousel-btn" onclick="scrollTrack('activityTrack', 1)">&#8250;</button>
+        <div class="cards-nav">
+          <button class="nav-btn" onclick="scrollCards(-1)">←</button>
+          <button class="nav-btn" onclick="scrollCards(1)">→</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HEALTH / WELLNESS -->
-  <section class="section wellness-section">
+  <section class="healthy" id="program">
+    <div class="container two-col reverse">
+      <div class="text-col">
+        <p class="section-label">Gaya Hidup</p>
+        <h2>Hidup Sehat,<br />Terus Berkarya</h2>
+        <p>Program kesehatan holistik kami dirancang untuk menjaga vitalitas fisik, mental, dan sosial setiap anggota komunitas.</p>
+        <div class="checklist-grid">
+          <div class="check-item"><span>✓</span> Pemeriksaan Kesehatan Rutin</div>
+          <div class="check-item"><span>✓</span> Nutrisi &amp; Gizi Seimbang</div>
+          <div class="check-item"><span>✓</span> Aktivitas Fisik Harian</div>
+          <div class="check-item"><span>✓</span> Kesehatan Mental</div>
+          <div class="check-item"><span>✓</span> Bimbingan Rohani</div>
+          <div class="check-item"><span>✓</span> Pendampingan Sosial</div>
+        </div>
+        <a href="#kontak" class="btn btn-primary">Pelajari Program Kami</a>
+      </div>
+      <div class="healthy-visual">
+        <div class="stat-card"><span class="stat-num">500+</span><span class="stat-label">Anggota Aktif</span></div>
+        <div class="stat-card accent"><span class="stat-num">50+</span><span class="stat-label">Program Kegiatan</span></div>
+        <div class="stat-card"><span class="stat-num">10+</span><span class="stat-label">Tahun Pengalaman</span></div>
+        <div class="stat-card accent"><span class="stat-num">98%</span><span class="stat-label">Tingkat Kepuasan</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="heritage">
+    <div class="heritage-bg"><img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=1400&q=80" alt="Temple" /></div>
+    <div class="heritage-overlay"></div>
+    <div class="container heritage-content">
+      <p class="section-label light">Tentang Kami</p>
+      <h2>Menuju hunian yang<br />aman, layak &amp;<br />bermartabat</h2>
+      <p>Kami percaya bahwa masa purnabakti adalah babak kehidupan yang penuh potensi.</p>
+      <a href="#kontak" class="btn btn-white">Bergabung Bersama Kami</a>
+    </div>
+  </section>
+
+  <section class="city-section">
     <div class="container">
-      <p class="section-label">NP Wellness</p>
-      <h2 class="section-title">Hidup Sehat, Terus Berkarya</h2>
-      <p class="body-text wellness-lead">
-        Kami percaya kesehatan adalah fondasi dari kehidupan yang bermakna. NP Center menyediakan
-        layanan dan fasilitas yang mendukung kesehatan fisik, mental, dan sosial Anda.
-      </p>
-
-      <div class="wellness-grid">
-        <div class="wellness-card wellness-card--white">
-          <div class="wellness-icon">&#128153;</div>
-          <h3 class="wellness-card-title">Layanan Kesehatan &amp; Pemberdayaan</h3>
-          <p class="body-text-sm">Warnanya untuk senior yang sehat, mandiri &amp; berdaya</p>
-          <ul class="wellness-list">
-            <li>
-              <span class="wl-label">Pemeriksaan Kesehatan</span>
-              <span class="wl-desc">Cek berkala tekanan darah, gula darah, dll</span>
-            </li>
-            <li>
-              <span class="wl-label">Fisioterapi &amp; Program</span>
-              <span class="wl-desc">Latihan gerak terpandu oleh tenaga ahli</span>
-            </li>
-            <li>
-              <span class="wl-label">Konsultasi Wellness</span>
-              <span class="wl-desc">Sesi privat dengan konselor kesehatan</span>
-            </li>
-            <li>
-              <span class="wl-label">Layanan Poli Program</span>
-              <span class="wl-desc">Akses klinik mitra di sekitar NP Center</span>
-            </li>
-            <li>
-              <span class="wl-label">Pemberdayaan Hidup</span>
-              <span class="wl-desc">Program pengembangan diri &amp; komunitas</span>
-            </li>
-          </ul>
-        </div>
-        <div class="wellness-card wellness-card--cream">
-          <div class="wellness-icon">&#9889;</div>
-          <h3 class="wellness-card-title">Susunan Wellness Center</h3>
-          <p class="wellness-card-subtitle">Tetap bermakna, hidup berkontribusi</p>
-          <p class="body-text-sm">
-            NP Wellness Center adalah jantung dari ekosistem purnabakti kami.
-            Dirancang untuk mendukung gaya hidup aktif dengan pendekatan holistik
-            yang memperhatikan kondisi fisik dan mental Anda.
-          </p>
-          <div class="wellness-tags">
-            <span class="tag">Senam Pagi</span>
-            <span class="tag">Yoga</span>
-            <span class="tag">Meditasi</span>
-            <span class="tag">Nutrisi</span>
-            <span class="tag">Fisioterapi</span>
-            <span class="tag">Konseling</span>
-          </div>
-        </div>
+      <p class="section-label">Lokasi Strategis</p>
+      <h2>Kota yang hangat untuk semua dengan bermartabat</h2>
+      <p class="section-sub">Berlokasi di jantung kota yang kaya budaya dan alam, Nirwana Purnabakti menawarkan lingkungan terbaik untuk kehidupan aktif.</p>
+      <div class="city-grid">
+        <div class="city-card large"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Hunian" /><div class="city-card-overlay"><span>🏠</span><p>Hunian</p></div></div>
+        <div class="city-card"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="Kesehatan" /><div class="city-card-overlay"><span>🏥</span><p>Kesehatan</p></div></div>
+        <div class="city-card"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Lingkungan" /><div class="city-card-overlay"><span>🌿</span><p>Lingkungan</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- HOUSING -->
-  <section class="section section--gray housing-section">
-    <div class="container housing-grid">
-      <div class="housing-text">
-        <p class="section-label">Hunian Purnabakti</p>
-        <h2 class="section-title">Menuju hunian yang aman, layak &amp; bermartabat</h2>
-        <p class="body-text">
-          Kami membantu para senior menemukan dan mengakses hunian yang nyaman, aman,
-          dan sesuai kebutuhan. Setiap senior berhak mendapatkan tempat tinggal yang
-          layak dan penuh ketenangan di masa pensiun.
-        </p>
-        <div class="housing-actions">
-          <a href="#" class="btn btn-primary">Cari Hunian Purnabakti</a>
-          <a href="#" class="btn btn-outline-dark">Daftar Mitra Hunian</a>
-        </div>
-      </div>
-      <div class="housing-image">
-        <div class="img-placeholder img-placeholder--tall">
-          <span class="img-icon">&#127968;</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CITY -->
-  <section class="section city-section">
+  <section class="book-section">
     <div class="container">
-      <p class="body-text city-intro">
-        Nirwana Purnabakti hadir di beberapa kota besar Indonesia, memastikan akses
-        layanan yang merata bagi seluruh purnabakti di berbagai wilayah.
-      </p>
-      <h2 class="section-title">Kota yang hangat untuk menua dengan bermartabat</h2>
-
-      <div class="city-features">
-        <div class="city-feature">
-          <div class="feature-icon">&#127968;</div>
-          <div>
-            <h4 class="feature-title">Beraya</h4>
-            <p class="body-text-sm">Hunian yang terjangkau dengan fasilitas komunitas lengkap dan mudah diakses.</p>
-          </div>
+      <div class="book-inner">
+        <div class="book-badge"><img src="assets/logo.png" alt="NP" /><span>NIRWANA PURNABAKTI<br /><small>Mitra Purnabakti</small></span></div>
+        <div class="book-text">
+          <p class="section-label">Bacaan Inspiratif</p>
+          <h2>Menyambut Purnabakti, Sebagai Keluarga</h2>
+          <p class="book-sub">Membawa Arti Ketika Usia tak Lagi Muda</p>
+          <p>Buku panduan hidup bermakna di masa purnabakti — kumpulan cerita nyata, refleksi mendalam, dan panduan praktis.</p>
+          <a href="#" class="btn btn-primary">Unduh Gratis</a>
         </div>
-        <div class="city-feature">
-          <div class="feature-icon">&#128153;</div>
-          <div>
-            <h4 class="feature-title">Kesehatan</h4>
-            <p class="body-text-sm">Akses ke layanan kesehatan mitra yang tersebar di seluruh kota melalui satu aplikasi media.</p>
-          </div>
-        </div>
-        <div class="city-feature">
-          <div class="feature-icon">&#127807;</div>
-          <div>
-            <h4 class="feature-title">Lingkungan</h4>
-            <p class="body-text-sm">Area yang ramah senior dengan ruang hijau dan fasilitas umum yang aksesibel.</p>
-          </div>
-        </div>
+        <div class="book-cover"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&q=80" alt="Buku" class="rounded-img" /></div>
       </div>
-
-      <div class="cards-track-wrapper">
-        <div class="cards-track" id="cityTrack">
-          <div class="city-card">
-            <div class="img-placeholder img-placeholder--city"><span class="img-icon">&#127961;</span></div>
-            <p class="city-name">Jakarta</p>
-          </div>
-          <div class="city-card">
-            <div class="img-placeholder img-placeholder--city"><span class="img-icon">&#127961;</span></div>
-            <p class="city-name">Bandung</p>
-          </div>
-          <div class="city-card">
-            <div class="img-placeholder img-placeholder--city"><span class="img-icon">&#127961;</span></div>
-            <p class="city-name">Surabaya</p>
-          </div>
-          <div class="city-card">
-            <div class="img-placeholder img-placeholder--city"><span class="img-icon">&#127961;</span></div>
-            <p class="city-name">Yogyakarta</p>
-          </div>
-          <div class="city-card">
-            <div class="img-placeholder img-placeholder--city"><span class="img-icon">&#127961;</span></div>
-            <p class="city-name">Semarang</p>
-          </div>
-        </div>
-        <div class="carousel-nav">
-          <button class="carousel-btn" onclick="scrollTrack('cityTrack', -1)">&#8249;</button>
-          <button class="carousel-btn" onclick="scrollTrack('cityTrack', 1)">&#8250;</button>
-        </div>
+      <div class="family-cta">
+        <h3>Keputusan Ada di Tangan Keluarga</h3>
+        <p>Kami memahami bahwa memilih hunian terbaik untuk orang tua adalah keputusan penting. Tim kami siap mendampingi setiap langkah Anda.</p>
+        <a href="#kontak" class="btn btn-white">Konsultasi Gratis</a>
       </div>
     </div>
   </section>
 
-  <!-- PARTNERS -->
-  <section class="section section--gray partners-section">
+  <section class="blog-section" id="blog">
     <div class="container">
-      <div class="partners-header">
-        <div>
-          <p class="section-label">Ekosistem Mitra</p>
-          <h2 class="section-title">Berkolaborasi membangun<br />ekosistem purnabakti aktif</h2>
-        </div>
-        <a href="#" class="btn btn-outline-dark">Lihat Kerjasama</a>
+      <div class="blog-header">
+        <div><p class="section-label">Berita &amp; Inspirasi</p><h2>Cerita, wawasan &amp; kegiatan terbaru</h2></div>
+        <a href="#" class="btn btn-outline">Lihat Semua →</a>
       </div>
-
-      <div class="cards-track-wrapper">
-        <div class="cards-track" id="partnerTrack">
-          <div class="partner-card"><div class="partner-logo">Partner Name</div></div>
-          <div class="partner-card"><div class="partner-logo">Partner Name</div></div>
-          <div class="partner-card"><div class="partner-logo">Partner Name</div></div>
-          <div class="partner-card"><div class="partner-logo">Partner Name</div></div>
-          <div class="partner-card"><div class="partner-logo">Partner Name</div></div>
-        </div>
-        <div class="carousel-nav">
-          <button class="carousel-btn" onclick="scrollTrack('partnerTrack', -1)">&#8249;</button>
-          <button class="carousel-btn" onclick="scrollTrack('partnerTrack', 1)">&#8250;</button>
-        </div>
+      <div class="blog-grid">
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=500&q=80" alt="Blog 1" /><div class="blog-body"><p class="blog-tag">Kesehatan</p><h3>Berbagi Misi Purnabakti: Aktif, Produktif, dan Bermakna?</h3><p>Temukan bagaimana purnabakti aktif dapat terus berkontribusi bagi keluarga dan masyarakat.</p><a href="#" class="card-link">Baca Selengkapnya →</a></div></article>
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&q=80" alt="Blog 2" /><div class="blog-body"><p class="blog-tag">Komunitas</p><h3>Apakah PRA Center Nirwana Purnabakti Solusinya?</h3><p>Mengenal lebih jauh konsep Pre-Retirement Activity Center yang kami tawarkan.</p><a href="#" class="card-link">Baca Selengkapnya →</a></div></article>
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1576765608866-5b51046452be?w=500&q=80" alt="Blog 3" /><div class="blog-body"><p class="blog-tag">Hunian</p><h3>Menuju Purnabakti yang Aman, Layak, dan Bermartabat</h3><p>Panduan lengkap merencanakan masa pensiun yang nyaman dan penuh kebahagiaan.</p><a href="#" class="card-link">Baca Selengkapnya →</a></div></article>
+        <article class="blog-card"><img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&q=80" alt="Blog 4" /><div class="blog-body"><p class="blog-tag">Program</p><h3>Program Baru: Pemberdayaan Digital untuk Lansia</h3><p>Inisiatif terbaru kami dalam membekali purnabakti dengan keterampilan digital.</p><a href="#" class="card-link">Baca Selengkapnya →</a></div></article>
       </div>
     </div>
   </section>
 
-  <!-- OFFICIALS / PLACEHOLDER -->
-  <section class="section officials-section">
-    <div class="container">
-      <p class="section-label">Untuk Pejabat</p>
-      <h2 class="section-title">Bagian khusus, siap diisi kemudian</h2>
-      <p class="body-text">
-        Kami menyediakan akses khusus bagi instansi pemerintah dan organisasi mitra
-        untuk berkolaborasi dalam membangun ekosistem purnabakti yang kuat.
-      </p>
-      <div class="officials-grid">
-        <div class="official-card">
-          <div class="img-placeholder img-placeholder--official"><span class="img-icon">&#128247;</span></div>
-          <p class="card-label">Berkarya di Masa Purnabakti: Mengapa Senior Perlu Tetap Aktif?</p>
-          <p class="card-meta-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris.</p>
-        </div>
-        <div class="official-card">
-          <div class="img-placeholder img-placeholder--official"><span class="img-icon">&#128247;</span></div>
-          <p class="card-label">Apakah NP&amp; Center Nirwana Purnabakti?</p>
-          <p class="card-meta-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris.</p>
-        </div>
-        <div class="official-card">
-          <div class="img-placeholder img-placeholder--official"><span class="img-icon">&#128247;</span></div>
-          <p class="card-label">Menuju Hunian Purnabakti yang Aman, Layak dan Bermartabat</p>
-          <p class="card-meta-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris.</p>
+  <section class="cta-section" id="kontak">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <p class="section-label light">Mulai Percakapan</p>
+        <h2>Mari mulai percakapan</h2>
+        <p>Kami siap menjawab pertanyaan Anda dan membantu menemukan program yang paling sesuai.</p>
+        <div class="contact-list">
+          <div class="contact-item"><span>📍</span><span>Yogyakarta, Indonesia</span></div>
+          <div class="contact-item"><span>📞</span><span>+62 274 000 0000</span></div>
+          <div class="contact-item"><span>✉️</span><span>info@nirwanapurnabakti.id</span></div>
+          <div class="contact-item"><span>🌐</span><span>www.nirwanapurnabakti.id</span></div>
         </div>
       </div>
-      <a href="#" class="btn btn-outline-dark mt-24">Lihat Semua</a>
-    </div>
-  </section>
-
-  <!-- NEWS / STORIES -->
-  <section class="section section--gray news-section">
-    <div class="container">
-      <p class="section-label">Tulis &amp; Berita</p>
-      <h2 class="section-title">Cerita, wawasan &amp; kegiatan terbaru</h2>
-
-      <div class="news-grid">
-        <div class="news-card">
-          <div class="img-placeholder img-placeholder--news"><span class="img-icon">&#128247;</span></div>
-          <div class="news-body">
-            <span class="news-tag">Artikel</span>
-            <h4 class="news-title">Berkarya di Masa Purnabakti: Mengapa Senior Perlu Tetap Aktif?</h4>
-            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris, at lacinia nisl.</p>
-            <a href="#" class="news-link">Baca Selengkapnya &#8594;</a>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="img-placeholder img-placeholder--news"><span class="img-icon">&#128247;</span></div>
-          <div class="news-body">
-            <span class="news-tag">FAQ</span>
-            <h4 class="news-title">Apakah NP&amp; Center Nirwana Purnabakti?</h4>
-            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris, at lacinia nisl.</p>
-            <a href="#" class="news-link">Baca Selengkapnya &#8594;</a>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="img-placeholder img-placeholder--news"><span class="img-icon">&#128247;</span></div>
-          <div class="news-body">
-            <span class="news-tag">Panduan</span>
-            <h4 class="news-title">Menuju Hunian Purnabakti yang Aman, Layak dan Bermartabat</h4>
-            <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at aliquam mauris, at lacinia nisl.</p>
-            <a href="#" class="news-link">Baca Selengkapnya &#8594;</a>
-          </div>
-        </div>
+      <div class="cta-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126353.08175068168!2d110.30242005!3d-7.7955799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5786baf01b0b%3A0x6f5fa3c0c4fda04a!2sYogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1718000000000!5m2!1sid!2sid" width="100%" height="350" style="border:0;border-radius:12px;" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <p class="logo footer-logo">Logo</p>
-        <p class="footer-tagline">Tetap Bermakna, Terus Berkarya</p>
-        <p class="footer-desc">Komunitas purnabakti yang menghubungkan senior dengan komunitas, kegiatan, dan layanan yang bermakna.</p>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <p class="footer-col-title">Layanan</p>
-          <ul>
-            <li><a href="#">NP Center</a></li>
-            <li><a href="#">NP Wellness</a></li>
-            <li><a href="#">Hunian Purnabakti</a></li>
-            <li><a href="#">Komunitas</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Tentang</p>
-          <ul>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Mitra</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Karir</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Kontak</p>
-          <ul>
-            <li><a href="#">info@nirwanapurnabakti.id</a></li>
-            <li><a href="#">+62 21 1234 5678</a></li>
-            <li><a href="#">Jakarta, Indonesia</a></li>
-          </ul>
+        <img src="assets/logo-white.png" alt="Nirwana Purnabakti" class="footer-logo" />
+        <p>Komunitas purnabakti yang aktif, hangat, dan bermakna.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
         </div>
       </div>
+      <div class="footer-links"><h4>Navigasi</h4><a href="#">Beranda</a><a href="#program">Program</a><a href="#fasilitas">Fasilitas</a><a href="#komunitas">Komunitas</a><a href="#blog">Berita</a><a href="#kontak">Kontak</a></div>
+      <div class="footer-links"><h4>Program</h4><a href="#">Kesehatan &amp; Kebugaran</a><a href="#">Kegiatan Sosial</a><a href="#">Pemberdayaan Digital</a><a href="#">Seni &amp; Budaya</a><a href="#">Rohani &amp; Spiritual</a></div>
+      <div class="footer-links"><h4>Informasi</h4><a href="#">Tentang Kami</a><a href="#">Kebijakan Privasi</a><a href="#">Syarat &amp; Ketentuan</a><a href="#">FAQ</a></div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2025 Nirwana Purnabakti. Semua hak dilindungi.</p>
-      </div>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Nirwana Purnabakti. Seluruh hak cipta dilindungi.</p></div>
   </footer>
 
   <script>
-    function scrollTrack(id, dir) {
-      const track = document.getElementById(id);
-      const cardWidth = track.querySelector(':first-child').offsetWidth + 24;
-      track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
-    }
+    document.querySelector('.nav-toggle').addEventListener('click', () => document.querySelector('.nav-links').classList.toggle('open'));
+    function scrollCards(dir) { document.querySelector('.cards-track').scrollBy({ left: dir * 320, behavior: 'smooth' }); }
+    window.addEventListener('scroll', () => document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 20));
   </script>
 </body>
 </html>
+```
+
+Paste that in, click **Commit changes**. Then tell me and I'll give you the CSS to paste into `styles.css`.
